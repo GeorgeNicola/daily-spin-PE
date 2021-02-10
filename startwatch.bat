@@ -1,0 +1,1 @@
+call gulp watch --campaignid %1
