@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vinderspin</title>
-    
-    
-    <!-- inject:css -->
-    <link rel="stylesheet" href="css/1_somecommon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- endinject -->
-
-    <!-- inject:brandcss -->
-    <!-- endinject -->
-
-    <!-- inject:subbrandcss -->
-    <!-- endinject -->
-    
-    <!-- mockdata:js -->
-    <script src="MockData/datamodel.js"></script>
-    <!-- endinject -->
-</head>
-
-<body onload="setClickEvents()">
-    <!-- inject:view:html -->
-    <div id="container">
+<!-- build:css css/combined_da.css -->
+<link rel="stylesheet" href="css/1_somecommon.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- inject:brandcss -->
+<!-- inject:subbrandcss -->
+<!-- endbuild -->
+<div id="container">
 	<div id="inner-container">
 		<div class="loader"> </div>
 		<div id="game-board" class="hidden-game-board">
@@ -188,12 +167,11 @@
 	</div>
 </div>
 
-    <!-- endinject -->
-    <!-- inject:js -->
-    <script src="scripts/1/commonscript.js"></script>
-    <script src="scripts/a/jQuery-v3.1.js"></script>
-    <script src="scripts/b/configPromo.js"></script>
-    <script src="scripts/b/main.js"></script>
-    <!-- endinject -->
-</body>
-</html>
+<!-- build:js scripts/combined.js -->
+<!-- inject:js -->
+<script src="scripts/1/commonscript.js"></script>
+<script src="scripts/a/jQuery-v3.1.js"></script>
+<script src="scripts/b/configPromo.js"></script>
+<script src="scripts/b/main.js"></script>
+<!-- endinject -->
+<!-- endbuild -->

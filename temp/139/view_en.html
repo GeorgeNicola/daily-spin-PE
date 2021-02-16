@@ -1,0 +1,177 @@
+<!-- build:css css/combined_en.css -->
+<link rel="stylesheet" href="css/1_somecommon.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- inject:brandcss -->
+<!-- inject:subbrandcss -->
+<!-- endbuild -->
+<div id="container">
+	<div id="inner-container">
+		<div class="loader"> </div>
+		<div id="game-board" class="hidden-game-board">
+			<div id="contentWheel">
+				<div id="wheel-con">
+					<img id="wheel-of-fortune" />
+					<img id="pivot" src="images/pivot.png" />
+					<img id="shadow" src="images/shadow.png" />
+				</div>
+				<div id="spin-text-btn">
+					<img id="promo-title" />
+				</div>
+				<span class="spin-cta">
+					<img id="loding-spin-btn" src="images/loading-spin.gif" />
+					<a id="spin-btn" href="javascript:void(0)" style="font-weight: 900;"></a>
+				</span>
+			</div>
+			<!-- <div class="gerMessage">
+				<div class="notAvailableEN">
+					<p class="white-text" style="font-size:24px;">Hello,</p>
+					<p class="white-text" style="font-size:24px;">The spin is coming back on 11.11, and that's not all that's coming.. stay tuned!</p>
+				</div>
+				<div class="notAvailableDE">
+					<p class="white-text" style="font-size:24px;">Hallo,</p>
+					<p class="white-text" style="font-size:24px;">der Spin kommt am 11.11. zurück und das ist nicht alles. Dran bleiben!</p>
+				</div>		
+			</div> -->
+		</div>
+		<div id="popup-con" class="invisible">
+			<div class="background-massege">&nbsp;</div>
+
+			<div id="congrats-ftd1" class="congrats popup-message invisible">
+				<!-- <img src="/src/Campaigns/139/images/qr-code.png" class="qr-code pc-elements"> -->
+				<p class="text-color">Awesome! You’ve won:</p>
+				<p class="prize-name text-color">&nbsp;</p>
+				<p class="text-color">Check out your account, it’s already been dropped in.</p>
+				<a class="cta-btn go-back-btn" href="#" name="go-back-btn" id="go-back-btn"
+					style="white-space: nowrap;"><span class="textFitted  textFitAlignVert"
+						style="display: inline-block; font-size: 18px;"><span class="btn-text">Play Now</span></span></a>
+				<p class="white-text">Want more?</p>
+				<p class="white-text">Spin once on PC and once on Mobile for double the fun.</p>
+			</div>
+
+			<div id="congrats-ftd0" class="congrats popup-message invisible">
+				<p class="text-color">Awesome! You’ve won:</p>
+				<p class="prize-name text-color">&nbsp;</p>
+			</div>
+
+			<div id="already-played-ftd1" class="popup-message invisible">
+				<!-- <img src="/src/Campaigns/139/images/qr-code.png" class="qr-code pc-elements" style="display: none;"> -->
+				<p class="bold text-color"><strong>Oh man, you already had a spin today.</strong></p>
+				<p class="white-text">Don’t you worry though, there’s always tomorrow.</p>
+				<p class="bold text-color">Wanna go again?</p>
+				<p class="white-text">Spin once on PC and once on Mobile for double the fun.</p>
+				<a class="cta-btn go-back-btn" href="#" name="go-back-btn" id="go-back-btn"
+					style="white-space: nowrap;"><span
+						style="display: inline-block; font-size: 18px;"><span class="btn-text">Play Now</span></span></a>
+			</div>
+
+			<div id="already-played-ftd0" class="popup-message invisible">
+				<p class="bold text-color"><strong>Ahh Sorry, you’ve already used your free spin.</strong></p>
+				<p class="white-text">You can make a deposit & get 2 daily spins: one on mobile & one on PC.</p>
+				<a class="cta-btn deposit-now-btn" href="#" name="deposit-now-btn" id="deposit-now-btn"
+					style="white-space: nowrap;"><span class=""
+						style="display: inline-block; font-size: 18px;"><span class="btn-text">DEPOSIT NOW!</span></span></a>
+			</div>
+
+			<div id="tech-issue" class="popup-message invisible">
+				<p class="text-color"><span class=""
+						style="display: inline-block; font-size: 25px;">Bummer.</span></p>
+				<p class="text-color"><span class=""
+						style="display: inline-block; font-size: 25px;">Looks like the fuse has gone.</span></p>
+				<p class=""><span class=""
+						style="display: inline-block; font-size: 20px;">Please try again</span></p>
+				<p class=""><span class=""
+						style="display: inline-block; font-size: 20px;">or contact technical support if it continues.</span></p>
+			</div>
+
+			<div id="not-recognized" class="popup-message invisible">
+				<p class="text-color"><span class=""
+						style="display: inline-block; font-size: 25px;">Oh dear,</span></p>
+				<p class="text-color"><span class=""
+						style="display: inline-block; font-size: 25px;">we don’t seem to recognize you!</span></p>
+				<p class=""><span class=""
+						style="display: inline-block; font-size: 25px;">Please try again</span></p>
+				<p class=""><span class=""
+						style="display: inline-block; font-size: 25px;">or contact technical support if it continues.</span></span></p>
+			</div>
+
+			<div id="no-win" class="popup-message invisible">
+				<p class="prize-name text-color">&nbsp;</p>
+				<p class="max25 bold text-color"><span class=""
+						style="display: inline-block; font-size: 25px;">Stay tuned for more games coming soon.</span></p>
+			</div>
+
+			<div id="not-supported" class="popup-message invisible">
+				<p class="first-margin bold text-color">Oh dear,</p>
+				<p class="text-color bold">looks like this isn't supported by your browser.</p>
+				<p class="white-text">Try opening a different browser and trying again.</p>
+				<p class="white-text" style="font-size: 0.75rem;"><i>*Supported browsers: Chrome, Mozilla Firefox, Microsoft Edge</i></p>
+			</div>
+
+		</div>
+
+		<div style="font-size: 11px;" id="tnc" class="fixid-center">
+			<span style="font-size: 11px;" class="tnc-link">Full T&Cs apply</span>
+			<span style="font-size: 11px;" class="not-to-xml sig-tnc">
+				<span style="font-size: 11px;" class="ro-tnc">
+					• Dacă din anumite motive nu poți utiliza premiul primit, te rugăm să contactezi departamentul de suport la: <a href="mailto:suport@888.ro">suport@888.ro</a>
+					• Jucătorii auto-restricționați de la oferte de cazinou/pariuri sportive care câștigă premii la cazinou/pariuri sportive vor primi în schimb un premiu diferit. <a href="https://www.888poker.ro/promotions/poker-roulette/tcs/">Se aplică integral termenii şi condiţiile</a>
+				</span>
+				<span style="font-size: 11px;" class="it-tnc">
+					• Se non riesci ad utilizzare il premio ricevuto, contatta per favore il Team di supporto a <a href="mailto:supporto@888.it">supporto@888.it</a>
+					• I giocatori che hanno richiesto limitazioni per casinò/sport che vincono premi casinò/sport riceveranno in cambio un premio alternativo. <a href="https://www.888poker.it/promozioni/promozioni-attive/pokeroulette/tcs/">Si applicano Termini&Condizioni</a>
+				</span>
+				<span style="font-size: 11px;" class="pt-tnc">
+					• Se por algum motivo não conseguir utilizar in prémio recebido, por favor contate o nosso suporte: <a href="mailto:Suporte@888.pt">Suporte@888.pt</a>
+					• Os jogadores autoexcluídos do casino que ganhem prémios de casino receberão como alternativa um prémio diferente. <a href="https://poker.888.pt/terms/spin/">Termos e Condições</a>
+				</span>
+				<span style="font-size: 11px;" class="uk-tnc">
+					• Available prizes are: Tournament tickets, Casino FreePlay, Sports Free Bet, Cash and Bonuses
+					• Wagering requirements apply 
+					• Additional terms apply to each prize
+					• Odds vary between prizes
+					• Odds of winning vary between players depending on gaming and deposit activity - see <a href="https://www.888poker.com/terms/888spin/">full T&Cs</a>
+					• Self-restricted players from casino/sport who win casino/sport prizes will get a different prize instead.
+					• If for some reason you can’t use the prize you received, please contact support: <a href="support@888poker.com">support@888poker.com</a>.
+				</span>
+				<span style="font-size: 11px;" class="dk-tnc">
+					• Selv-fravalgte spillere fra casino/sport som vinder en casino/sport gevinst vil få en anden gevinst I stedet.
+					• Præmierne er: Turneringsbilletter og sports-freebet
+					• Omsætningskrav er knyttet til præmierne
+					• Odds for præmierne varierer
+					• Odds differentieres i forhold til spil- og indbetalingshistorik
+					• Hvis du af en eller anden grund ikke kan benytte din modtagne gevinst, kontakt da vores support: <a href="mailto:kontakt@888.dk">kontakt@888.dk</a>
+					• <a href="https://www.888poker.dk/promotions/pokerroulette/tcs/">Vilkår</a>
+				</span>
+				<span style="font-size: 11px;" class="es-tnc">
+					• Premios: tickets de torneo, jugadas gratis de casino, apuestas gratis de sport, efectivo y bonos
+					• Aplican requisitos de apuestas
+					• Aplican términos adicionales a cada tipo de premio
+					• Los porcentajes de otorgación varían según el premio
+					• A los usuarios restringidos de las ofertas de Casino o Sport que ganen un premio de Casino o Sport se les otorgará un premio alternativo
+					• Si por alguna razón no puedes utilizar el premio recibido, contacta con el equipo de soporte: <a href="mailto:support@888poker.es">support@888poker.es</a>
+					• Los porcentajes de ganar los premios varían dependiendo de la actividad de juego y depósitos del usuario <a href="https://www.888poker.es/terms/888spin/">Aplican términos</a>
+				</span>
+				<span style="font-size: 11px;" class="de-tnc">
+					• Verfügbare Preise sind: Turniertickets, Spielautomaten-FreePlay, Bargeld und Boni
+					• Umsatzbedingungen gelten
+					• Für jeden Preis gelten zusätzliche Bedingungen
+					• Die Quoten variieren zwischen den Preisen
+					• Die Gewinnquoten variieren zwischen den Spielern je nach Spiel- und Einzahlungsaktivität – <a href="https://poker.888wetten.de/terms/888rad">siehe vollständige Teilnahmebedingungen</a>
+					• Wenn Sie den erhaltenen Preis aus irgendeinem Grund nicht verwenden können, wenden Sie sich bitte an den Kundendienst: <a href="mailto:Kontakt@888.de">Kontakt@888.de</a>
+				</span>
+			</span>
+
+			<img src="images/arrow.png" class="open-arrow">
+		</div>
+
+	</div>
+</div>
+
+<!-- build:js scripts/combined.js -->
+<!-- inject:js -->
+<script src="scripts/1/commonscript.js"></script>
+<script src="scripts/a/jQuery-v3.1.js"></script>
+<script src="scripts/b/configPromo.js"></script>
+<script src="scripts/b/main.js"></script>
+<!-- endinject -->
+<!-- endbuild -->
